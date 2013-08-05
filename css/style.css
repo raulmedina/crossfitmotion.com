@@ -1,0 +1,348 @@
+/*
+Responsive 996px grid system ~ Style CSS.
+Copyright 2013, Josh Cope
+*/
+
+/* =============================================================================
+   Site Styles
+   ========================================================================== */
+body {
+	
+	background-image: url(../images/binding_light.png);
+
+	
+	}
+
+h1,h2,h3,h4,h5,h6{
+	
+	color:rgb(242,100,23);
+	
+	}
+h2{
+	
+	background:rgb(38,30,30);
+	padding-left:10px;
+	
+	}
+
+h3{
+	
+	text-align:center;
+	
+	}
+		
+#logo h1{
+	
+	padding:0;
+	margin:0;
+	
+	}
+
+nav{
+
+
+	}
+
+	
+nav ul {
+	
+	padding:0;
+	margin-top:30px ;
+	position: relative;
+	float:right;
+
+	}	
+	
+nav li{
+	
+	display:inline;
+	margin:15px 5px;
+	background:#a7a4a2;
+	padding:10px;
+	border-radius:6px;
+	border:1px solid #f1f2f3;
+
+
+	}
+
+nav ul li a{
+	
+	color:#f1f2f3;
+	text-decoration:none;
+	
+	}
+
+nav li:hover{
+	
+	background:rgb(204,204,204);
+	
+	}
+	
+nav ul li:hover a {
+	
+	color:#fff;
+	
+	}
+
+#cta{
+	
+	margin:15px 0;
+	
+	}
+	
+#cta p {
+	
+	font-size:20px;
+	color:rgb(38,30,30);
+	font-weight:700;
+	
+	}
+	
+divider{
+	
+	width:100%;
+	height:1px;
+	margin:20px 0;
+	background:rgb(242,100,23);
+	
+	}
+	
+button{
+	
+	background:rgb(242,100,23);	
+	color:rgb(38,30,30);	
+	padding:10px 20px;
+	margin-top:10px;
+	font-size:16px;
+	font-weight:bold;
+	border:1px solid #999;
+	border-radius:6px;
+	
+	}
+
+button:hover {
+	
+	background:rgb(38,30,30);	
+	color:rgb(242,100,23);
+	
+	}
+
+table{
+	
+	background:rgb(220,216,213);
+	
+	}
+	
+table th{
+	
+	background:rgb(38,30,30);
+	color:rgb(242,100,23);
+	padding:5px 10px;
+		
+	}		
+
+table td{
+	
+	padding:5px 10px;
+	border:thin #e9e9e9 dotted;
+	
+	}
+
+/*------form css--------*/
+#form {
+	
+	padding:0;
+	margin:0;
+	
+	}
+
+.itext {
+	
+	text-align:right;
+	padding:20px 0 0;
+	
+	}	
+
+input, textarea{
+	
+	padding:10px 5px;
+	margin:10px 0;
+	
+	}	
+
+.form_bt{
+	
+	float:right;
+	margin-right:60px;
+	
+	}
+
+/*--contact css--*/
+
+#contact {
+	
+	padding-top:40px;
+	
+	}
+
+form button {
+	
+	float:right;
+	margin-right:70px;
+	
+	}
+
+#contact table{
+	
+	background-color: transparent;
+	
+	}
+
+#contact td{
+	
+	background:rgb(220,216,213);
+	
+	}	
+	
+footer{
+	
+	text-align:center;
+	line-height:1em;
+	padding:20px 0 0;
+		
+	}
+/*--colors--*/
+.white{
+	
+	color:white;
+	
+	}
+
+/* =============================================================================
+   Page Styles
+   ========================================================================== */
+
+/* =============================================================================
+   Media Queries
+   ========================================================================== */
+
+/* Tablet Portrait size to Base 996px */
+@media only screen and (min-width: 768px) and (max-width: 995px) {
+	
+	
+
+	
+	nav li{
+	display:inline;
+	margin:15px 5px;
+	
+	}
+	
+	
+	
+	
+	}
+
+/* All Mobile Sizes */
+@media only screen and (max-width: 767px) {
+	
+	
+	nav ul{
+	position: relative;	
+	margin-top:10px;
+		
+	}
+	
+	nav li{
+	
+	display:inline;
+	margin:15px 0px;
+	
+	}
+	
+	
+	
+	
+	}
+
+/* Mobile Landscape Size to Tablet Portrait */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+	nav ul{
+		
+	margin-top:10px;
+		
+	}
+	
+	nav li{
+	
+	display:inline;
+	margin:15px 0px;
+	
+	}
+	
+	.itext {
+		
+		text-align:left;
+		
+	}	
+	
+	#contact_info {
+		
+		float:right ;
+		
+		}
+	
+	#contact table{
+		
+		margin-top:60px;
+		
+		}
+		
+	}
+
+/* Mobile Portrait Size to Mobile Landscape Size */
+@media only screen and (max-width: 479px) {
+	
+	nav ul{
+		
+	margin-top:0px;
+		
+	}
+	
+	nav li{
+	
+	display:inline;
+	margin:5px 10px;
+	float:left;
+	
+	}
+	
+	.itext {
+		
+		text-align:left;
+		
+		}
+	
+
+	
+	}
+
+
+/* =============================================================================
+   Font-Face
+   ========================================================================== */
+/* This is the proper syntax for an @font-face file
+
+/* @font-face {
+font-family: 'FontName';
+src: url('../fonts/FontName.eot');
+src: url('../fonts/FontName.eot?iefix') format('embedded-opentype'),
+url('../fonts/FontName.woff') format('woff'),
+url('../fonts/FontName.ttf') format('truetype'),
+url('../fonts/FontName.svg#FontName') format('svg');
+font-weight: normal;
+font-style: normal; }
+*/
+
+
